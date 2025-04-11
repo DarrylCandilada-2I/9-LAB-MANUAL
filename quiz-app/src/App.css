@@ -1,0 +1,91 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+
+  /* Flexbox to center the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+  width: 600px; /* Fixed width */
+  padding: 20px;
+  border: 1px solid #00f0ff;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 0 15px 4px #00f0ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px 5px #00f0ff;
+}
+
+h1 {
+  color: #00f0ff;
+  font-size: 24px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option {
+  padding: 15px;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option:hover {
+  background-color: #333;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #00f0ff66;
+}
+
+.option.selected {
+  background-color: #00f0ff;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 15px 4px #00f0ff;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #00f0ff;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00f0ff;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #00c0cc;
+}

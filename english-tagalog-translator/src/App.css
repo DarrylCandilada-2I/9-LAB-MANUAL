@@ -1,0 +1,99 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 30px 40px;
+  border-radius: 10px;
+  background-color: #111;
+  text-align: center;
+  box-shadow: 0 0 15px 4px #00f0ff;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px 5px #00f0ff;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #00f0ff;
+}
+
+h2.translation-heading {
+  font-size: 16px;
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+input:hover {
+  background-color: #333;
+}
+
+input::placeholder {
+  color: #888;
+  text-transform: none;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00f0ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #00c0cc;
+}
+
+.output-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f0ff66;
+  color: #0ff;
+  font-size: 10px;
+  min-height: 50px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.output-container:hover {
+  background-color: #222;
+  box-shadow: 0 0 15px 5px #00f0ff;
+}
